@@ -35,7 +35,7 @@
    - Click **Load unpacked** and select the `focus-bully` folder.
 
 ## ⚙️ How it Works
-The extension monitors your tabs. If you've been on a "Productive" site for more than **30 seconds** and then switch to a "Distraction" site, the Bully will trigger.
+The extension monitors your tabs. If you've been on a "Productive" site for more than **10 seconds** and then switch to a "Distraction" site, the Bully will trigger.
 
 - **Productive Domains**: arXiv, GitHub, StackOverflow, Google Docs, etc.
 - **Distraction Domains**: Wikipedia (Trivia/Lists), Facebook, Reddit, YouTube, etc.
