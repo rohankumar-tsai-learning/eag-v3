@@ -9,7 +9,8 @@
 - **AI-Powered**: Leverages Gemini 1.5 Flash for unique, smart-aleck roasts every time.
 
 ## 📺 Demo
-[PLACEHOLDER: Insert your YouTube video link here]
+Part 1: [https://youtu.be/OpOaz3nPRnI](https://youtu.be/OpOaz3nPRnI)
+Part 2: [https://youtu.be/_doxroSI5tw](https://youtu.be/_doxroSI5tw)
 
 ## 🛠️ Installation
 
