@@ -37,8 +37,12 @@ async function checkUrl(tab) {
     const url = new URL(tab.url);
     const domain = url.hostname.replace('www.', '');
     
+    console.log(`[Focus Bully] Checking URL: ${domain}`);
+    
     const isProductive = PRODUCTIVE_DOMAINS.some(d => domain.includes(d));
     const isDistraction = DISTRACTION_DOMAINS.some(d => domain.includes(d));
+
+    console.log(`[Focus Bully] Classification - Productive: ${isProductive}, Distraction: ${isDistraction}`);
 
     if (isProductive) {
         console.log("User is working. Good.");
@@ -53,9 +57,12 @@ async function checkUrl(tab) {
     } else if (isDistraction) {
         const now = Date.now();
         const sessionDuration = productiveStartTime ? now - productiveStartTime : 0;
+        const sessionDurationSec = Math.floor(sessionDuration / 1000);
+
+        console.log(`[Focus Bully] Distraction detected! Productive session was: ${sessionDurationSec}s`);
 
         if (lastProductiveContext && sessionDuration >= THRESHOLD_MS) {
-            console.log("Procrastination detected!");
+            console.log("[Focus Bully] Threshold met. Triggering roast...");
             
             // Special check for Wikipedia "History of Spoons" type stuff
             let distractionTopic = {
