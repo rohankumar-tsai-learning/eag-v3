@@ -1,4 +1,5 @@
 import { getRoastFromGemini } from './api_handler.js';
+import { CONFIG } from './config.js';
 
 // Configuration for Productivity and Distraction
 const PRODUCTIVE_DOMAINS = [
@@ -83,21 +84,10 @@ async function checkUrl(tab) {
 
 async function triggerRoast(tabId, context, distraction) {
     try {
-        // Attempt to import the config. 
-        // We use a dynamic import so the extension doesn't crash if config.js is missing.
-        let CONFIG;
-        try {
-            const module = await import('./config.js');
-            CONFIG = module.CONFIG;
-        } catch (e) {
-            console.error("Config file 'config.js' not found. Please follow the setup steps in README.md.");
-            return;
-        }
-
         const apiKey = CONFIG.GEMINI_API_KEY;
 
         if (!apiKey || apiKey === "YOUR_API_KEY_HERE") {
-            console.error("Gemini API Key not set in config.js.");
+            console.error("[Focus Bully] Gemini API Key not set in config.js.");
             return;
         }
 
