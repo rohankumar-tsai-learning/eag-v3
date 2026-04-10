@@ -17,7 +17,9 @@ const DISTRACTION_DOMAINS = [
 
 let lastProductiveContext = null;
 let productiveStartTime = null;
-const THRESHOLD_MS = 30000; // 30 seconds
+let lastRoastTime = 0;
+const THRESHOLD_MS = 10000; // 10 seconds
+const COOLDOWN_MS = 60000; // 60 seconds between roasts
 
 // Track tab updates
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
@@ -83,6 +85,12 @@ async function checkUrl(tab) {
 }
 
 async function triggerRoast(tabId, context, distraction) {
+    const now = Date.now();
+    if (now - lastRoastTime < COOLDOWN_MS) {
+        console.log("[Focus Bully] Roast in cooldown. Skipping to avoid rate limits.");
+        return;
+    }
+
     try {
         const apiKey = CONFIG.GEMINI_API_KEY;
 
@@ -103,6 +111,8 @@ async function triggerRoast(tabId, context, distraction) {
                 action: 'SHOW_ROAST',
                 data: roastData
             });
+            // Update last roast time only on success
+            lastRoastTime = Date.now();
         });
 
     } catch (e) {

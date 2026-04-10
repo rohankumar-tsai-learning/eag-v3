@@ -34,6 +34,12 @@ Output your response as a JSON object with two fields: "roast" (the text) and "e
         });
 
         if (!response.ok) {
+            if (response.status === 429) {
+                return {
+                    roast: "I'm so busy judging your other failures that I can't even roast this one yet. Slow down!",
+                    emoji: "⏳"
+                };
+            }
             throw new Error(`Gemini API error: ${response.statusText}`);
         }
 
