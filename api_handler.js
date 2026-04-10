@@ -2,7 +2,7 @@
  * Handles communication with the Google Gemini API.
  */
 export async function getRoastFromGemini(apiKey, productiveContext, distractionTopic) {
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
     
     const prompt = `You are a smart-aleck, judgmental but helpful focus coach.
 The user was just on ${productiveContext.site} doing ${productiveContext.tasks || 'work'} and suddenly switched to ${distractionTopic.site} to look at "${distractionTopic.title}".
