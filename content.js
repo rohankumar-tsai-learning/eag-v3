@@ -23,6 +23,7 @@
             shadowRoot = host.attachShadow({ mode: 'open' });
         } else {
             shadowRoot = host.shadowRoot;
+            shadowRoot.innerHTML = ''; // Clear previous popup to prevent stacking
         }
 
         // Add Styles

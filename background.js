@@ -90,6 +90,9 @@ async function triggerRoast(tabId, context, distraction) {
         console.log("[Focus Bully] Roast in cooldown. Skipping to avoid rate limits.");
         return;
     }
+    
+    // Eagerly update roast time to prevent async race conditions
+    lastRoastTime = now;
 
     try {
         const apiKey = CONFIG.GEMINI_API_KEY;
@@ -111,8 +114,6 @@ async function triggerRoast(tabId, context, distraction) {
                 action: 'SHOW_ROAST',
                 data: roastData
             });
-            // Update last roast time only on success
-            lastRoastTime = Date.now();
         });
 
     } catch (e) {
