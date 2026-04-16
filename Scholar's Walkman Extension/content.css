@@ -1,0 +1,12 @@
+/* Standard industry text highlighting */
+.tts-highlight {
+  background-color: #ffeb3b !important;
+  color: #000 !important;
+  border-radius: 2px;
+  outline: 1px solid #fdd835;
+}
+
+.tts-word {
+  /* No visible change normally, just for tracking text nodes */
+  display: inline;
+}

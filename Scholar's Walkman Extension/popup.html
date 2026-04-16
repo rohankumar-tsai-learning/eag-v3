@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scholar's Walkman</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icons/icon.png" alt="Scholar's Walkman Logo" class="logo">
+            <h1 class="title">Scholar's Walkman</h1>
+        </div>
+        
+        <div class="content">
+            <div id="status-container" class="status-container">
+                <p id="selection-status">Loading...</p>
+                <p id="word-count" class="word-count"></p>
+            </div>
+            
+            <div id="warning-message" class="warning message hidden"></div>
+            <div id="error-message" class="error message hidden"></div>
+            
+            <button id="btn-play" class="btn primary" disabled>Translate / Play</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
