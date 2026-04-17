@@ -6,7 +6,10 @@
 
 ## 📺 Demo / Tutorial
 > [!NOTE]  
-> [Insert/Placeholder for YouTube Video Here]
+> Demo: [https://youtu.be/f_9cyHwkDw4](https://youtu.be/f_9cyHwkDw4)
+> Capabilities: [https://youtu.be/6gR5bI0lY8c](https://youtu.be/6gR5bI0lY8c)
+> Contraints: [https://youtu.be/HhOfLE-FW6Q](https://youtu.be/HhOfLE-FW6Q)
+> LinkedIn Post: https://www.linkedin.com/posts/rohan-kumar-07b341404_as-a-student-exploring-the-world-of-agentic-share-7450922949508952064-m8Nl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGdG7x8Bj-5xGd7nhtZAAejoilri157A2Ro
 
 ---
 
