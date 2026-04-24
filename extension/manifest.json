@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Gandalf the Organizer",
+  "version": "1.0.0",
+  "description": "AI Personal Assistant with Agentic Reasoning - Your digital Gandalf for organizing life",
+  "permissions": [
+    "storage",
+    "tabs",
+    "geolocation",
+    "sidePanel"
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "Gandalf the Organizer"
+  },
+  "side_panel": {
+    "default_path": "src/side_panel.html"
+  },
+  "background": {
+    "service_worker": "src/js/background.js"
+  },
+  "icons": {
+    "16": "src/icons/icon-16.png",
+    "48": "src/icons/icon-48.png",
+    "128": "src/icons/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["src/styles/*.css", "src/js/*.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "https://ipwho.is/*",
+    "https://get.geojs.io/*",
+    "https://ipinfo.io/*",
+    "https://nominatim.openstreetmap.org/*",
+    "https://*/*"
+  ]
+}

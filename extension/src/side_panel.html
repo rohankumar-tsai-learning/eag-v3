@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandalf the Organizer</title>
+    <link rel="stylesheet" href="styles/amoled-theme.css">
+</head>
+<body>
+    <div class="side-panel-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-toolbar">
+                <button class="mind-toggle-btn" id="toggleMindBtn" aria-expanded="false" title="Show Wizard's Spellbook">
+                    🪄 Wizard's Spellbook
+                </button>
+                <button class="schedule-event-btn" id="scheduleEventBtn">
+                    📜 Schedule Chronicle
+                </button>
+                <div class="weather-stocks-section">
+                    <div class="weather-info">
+                        <div class="weather-icon" id="weatherIcon">🌤️</div>
+                        <div class="weather-details">
+                            <div class="city-name" id="cityName">Weather Paused</div>
+                            <div class="temperature" id="temperature">--°C</div>
+                        </div>
+                    </div>
+                    <div class="stocks-ticker">
+                        <div class="stock-item" id="stockTicker">--</div>
+                        <button class="stock-dropdown-btn" id="stockDropdownBtn" title="View top AI stocks">
+                            ▼
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mind-drawer-overlay" id="mindDrawerOverlay"></div>
+
+        <!-- Agent's Mind Drawer -->
+        <div class="agents-mind" id="agentsMindPanel" aria-hidden="true">
+            <div class="section-header">
+                <h2 class="section-title">🪄 Wizard's Spellbook</h2>
+                <div style="display: flex; gap: 8px;">
+                    <button class="btn-secondary" id="clearLogsBtn" style="padding: 4px 8px; font-size: 12px;">
+                        Clear
+                    </button>
+                    <button class="btn-secondary" id="closeMindDrawerBtn" style="padding: 4px 8px; font-size: 12px;" title="Close Wizard's Spellbook">
+                        Close
+                    </button>
+                </div>
+            </div>
+            <div class="reasoning-logs" id="reasoningLogs">
+                <div style="color: #5f6368; font-size: 11px;">
+                    Agent reasoning will appear here...
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- To-Do Section -->
+            <div class="todo-section">
+                <div class="section-header">
+                    <h2 class="section-title">📝 Your Quests</h2>
+                </div>
+                <div class="todo-list" id="todoList">
+                    <div class="empty-state">
+                        <div class="empty-state-message" id="emptyStateMessage">
+                            Loading tasks...
+                        </div>
+                        <button class="add-todo-btn" id="addTodoBtn">+ Add Quest</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI News Section -->
+            <div class="news-section">
+                <div class="section-header">
+                    <h2 class="section-title">📰 AI News</h2>
+                </div>
+                <div class="news-feed" id="newsFeed">
+                    <div style="text-align: center; color: #808080; padding: 20px;">
+                        Loading AI news...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+                <button class="btn btn-secondary" id="refreshBtn">
+                    🔄 Refresh Stocks
+                </button>
+                <div class="refresh-cooldown-text" id="refreshCooldownText"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stock Dropdown Modal -->
+    <div class="modal" id="stocksModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                💰 Top AI Stocks Globally
+            </div>
+            <div class="modal-body" id="stocksSummary">
+                <div style="padding: 12px; background: #f3f6fb; border-radius: 8px; color: #5f6368;">
+                    No wizard market summary yet. Run refresh to forge one.
+                </div>
+            </div>
+            <div class="modal-body" id="stocksList">
+                Loading stocks...
+            </div>
+            <div class="controls">
+                <button class="btn btn-secondary" id="closeStocksModalBtn">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Todo Modal -->
+    <div class="modal" id="addTodoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                ➕ Add New Quest
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Task Title</label>
+                    <input type="text" class="form-input" id="todoTitle" placeholder="What needs to be done?">
+                    <div class="char-count" id="titleCount">0/50</div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Description (max 200 words)</label>
+                    <textarea class="form-textarea" id="todoDescription" placeholder="Add details about this task..."></textarea>
+                    <div class="char-count" id="descCount">0/200</div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Due Date</label>
+                    <input type="datetime-local" class="form-input" id="todoDueDate">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Importance Level</label>
+                    <select class="form-select" id="todoImportance">
+                        <option value="low">🟡 Low - Eat more snacks, this can wait</option>
+                        <option value="medium" selected>🟠 Medium - Your life depends on it</option>
+                        <option value="high">🔴 High - Do it NOW or face the consequences</option>
+                    </select>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="btn btn-primary" id="saveTodoBtn">Save Task</button>
+                <button class="btn btn-secondary" id="cancelAddTodoBtn">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule Event Modal -->
+    <div class="modal" id="scheduleEventModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                📜 Schedule Chronicle
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Event Title</label>
+                    <input type="text" class="form-input" id="eventTitle" placeholder="Event name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Event Time</label>
+                    <input type="datetime-local" class="form-input" id="eventTime">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-textarea" id="eventDescription" placeholder="Event details..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email to Send Reminder</label>
+                    <input type="email" class="form-input" id="eventEmail" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Remind me (minutes before)</label>
+                    <input type="number" class="form-input" id="reminderMinutes" value="15" min="1">
+                </div>
+            </div>
+            <div class="controls">
+                <button class="btn btn-primary" id="saveEventBtn">Schedule Chronicle</button>
+                <button class="btn btn-secondary" id="cancelScheduleEventBtn">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weather Details Modal -->
+    <div class="modal" id="weatherModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                🌤️ Weather Details
+            </div>
+            <div class="modal-body" id="weatherDetails">
+                <div style="text-align: center; color: #808080;">
+                    No weather data available
+                </div>
+            </div>
+            <div class="controls">
+                <button class="btn btn-secondary" id="closeWeatherModalBtn">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/api-client.js"></script>
+    <script src="js/storage-manager.js"></script>
+    <script src="js/ui-manager.js"></script>
+    <script src="js/side-panel.js"></script>
+</body>
+</html>

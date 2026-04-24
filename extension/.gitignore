@@ -1,0 +1,19 @@
+# Configuration Files
+src/config.js
+config.js
+
+# Node modules
+node_modules/
+npm-debug.log
+
+# Build outputs
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

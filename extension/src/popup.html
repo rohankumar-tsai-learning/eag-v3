@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandalf the Organizer</title>
+    <link rel="stylesheet" href="styles/amoled-theme.css">
+    <style>
+        .popup-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #000000;
+        }
+        
+        .popup-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #4285F4, #7C3AED);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .popup-content {
+            color: #BFBFBF;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        .popup-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .popup-buttons.hidden {
+            display: none;
+        }
+        
+        .popup-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .popup-btn-primary {
+            background: linear-gradient(135deg, #4285F4, #7C3AED);
+            color: white;
+        }
+        
+        .popup-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+        }
+        
+        .popup-btn-secondary {
+            background-color: #1f1f1f;
+            color: #BFBFBF;
+            border: 1px solid #2a2a2a;
+        }
+        
+        .popup-btn-secondary:hover {
+            background-color: #2a2a2a;
+        }
+        
+        .status {
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-size: 12px;
+        }
+        
+        .status.active {
+            background-color: rgba(52, 168, 83, 0.1);
+            color: #34A853;
+            border: 1px solid #34A853;
+        }
+        
+        .status.inactive {
+            background-color: rgba(234, 67, 53, 0.1);
+            color: #EA4335;
+            border: 1px solid #EA4335;
+        }
+
+        .wizard-disclaimer {
+            display: none;
+            margin-bottom: 16px;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            background-color: rgba(251, 188, 4, 0.1);
+            color: #FBBC04;
+            border: 1px solid #FBBC04;
+        }
+
+        .wizard-disclaimer.visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-container">
+        <div class="popup-title">🧙‍♂️ Gandalf the Organizer</div>
+        
+        <div id="statusBox" class="status active">
+            ✅ Connected - Backend is running
+        </div>
+
+        <div id="wizardDisclaimer" class="wizard-disclaimer">
+            The Wizard is not available right now. Premium spellcasting is still under construction.
+        </div>
+        
+        <div class="popup-content">
+            <strong>Welcome to your AI Personal Assistant!</strong><br>
+            <br>
+            Gandalf helps you with:
+            <ul style="margin-top: 8px; margin-left: 20px;">
+                <li>Task management</li>
+                <li>AI news & research</li>
+                <li>Stock insights</li>
+                <li>Weather info</li>
+                <li>Event scheduling</li>
+            </ul>
+        </div>
+        
+        <div class="popup-buttons">
+            <button class="popup-btn popup-btn-primary" id="runOrganiserBtn">
+                ▶ Run the Organiser
+            </button>
+        </div>
+
+        <div class="popup-buttons hidden" id="postRunActions">
+            <button class="popup-btn popup-btn-secondary" id="openSidePanelBtn">
+                📖 Open Panel
+            </button>
+            <button class="popup-btn popup-btn-secondary" id="settingsBtn">
+                ⚙️ Settings
+            </button>
+        </div>
+    </div>
+    
+    <script src="js/config.js"></script>
+    <script src="js/api-client.js"></script>
+    <script src="js/storage-manager.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
