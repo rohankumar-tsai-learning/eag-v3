@@ -1,0 +1,1251 @@
+{
+  "commodities": {
+    "jkm_lng_asia": {
+      "key": "jkm_lng_asia",
+      "label": "Asia LNG Spot (JKM)",
+      "domain": "energy",
+      "entries": [
+        {
+          "timestamp": "2026-05-01T07:06:34.205Z",
+          "price": 0,
+          "unit": "USD/MMBtu",
+          "sentiment": "Source fetch failed for jkm_lng_asia: Gemini API key not configured No baseline found in vault; seeded with 0 pending next successful pull.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T07:57:54.210Z",
+          "price": 0,
+          "unit": "USD/MMBtu",
+          "sentiment": "Source fetch failed for jkm_lng_asia: Gemini API key not configured Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:01:44.654Z",
+          "price": 0,
+          "unit": "USD/MMBtu",
+          "sentiment": "Source fetch failed for jkm_lng_asia: Gemini HTTP 404 Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:15:53.047Z",
+          "price": 0,
+          "unit": "USD/MMBtu",
+          "sentiment": "Source fetch failed for jkm_lng_asia: Gemini v1/gemini-1.5-flash-latest HTTP 400 Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:22:43.457Z",
+          "price": 11.915200000000002,
+          "unit": "USD/MMBtu",
+          "sentiment": "JKM proxy built from live Henry Hub and Brent when direct JKM feed is unavailable.",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T08:40:47.650Z",
+          "price": 11.9504,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9504; prev=11.9152; delta_pct=0.30; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:00:36.143Z",
+          "price": 11.981750000000002,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9818; prev=11.9504; delta_pct=0.26; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:02.009Z",
+          "price": 11.99385,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9939; prev=11.9818; delta_pct=0.10; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:02.009Z",
+          "price": 11.99385,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9939; prev=11.9818; delta_pct=0.10; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:17.980Z",
+          "price": 11.992750000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9928; prev=11.9939; delta_pct=-0.01; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:19:38.478Z",
+          "price": 11.965800000000002,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9658; prev=11.9928; delta_pct=-0.22; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:59:07.040Z",
+          "price": 11.969100000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9691; prev=11.9658; delta_pct=0.03; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:10:25.173Z",
+          "price": 11.9548,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9548; prev=11.9691; delta_pct=-0.12; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:21:13.300Z",
+          "price": 11.97845,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9785; prev=11.9548; delta_pct=0.20; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:27:29.779Z",
+          "price": 11.97405,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9741; prev=11.9785; delta_pct=-0.04; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:06:03.267Z",
+          "price": 11.905850000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9059; prev=11.9741; delta_pct=-0.57; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:06:04.533Z",
+          "price": 11.9075,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.9075; prev=11.9059; delta_pct=0.01; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:22:50.619Z",
+          "price": 11.864600000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8646; prev=11.9075; delta_pct=-0.36; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:26:50.531Z",
+          "price": 11.85195,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8520; prev=11.8646; delta_pct=-0.11; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:30.652Z",
+          "price": 11.851400000000002,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8514; prev=11.8520; delta_pct=-0.00; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:46.721Z",
+          "price": 11.851400000000002,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8514; prev=11.8514; delta_pct=0.00; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:56.987Z",
+          "price": 11.856900000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8569; prev=11.8514; delta_pct=0.05; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:58.096Z",
+          "price": 11.855250000000002,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8553; prev=11.8569; delta_pct=-0.01; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:53.909Z",
+          "price": 11.8536,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8536; prev=11.8553; delta_pct=-0.01; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:54.638Z",
+          "price": 11.8536,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8536; prev=11.8536; delta_pct=0.00; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:55.378Z",
+          "price": 11.854700000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8547; prev=11.8536; delta_pct=0.01; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:56.109Z",
+          "price": 11.854700000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8547; prev=11.8547; delta_pct=0.00; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:56.839Z",
+          "price": 11.854700000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8547; prev=11.8547; delta_pct=0.00; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:58.224Z",
+          "price": 11.854700000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8547; prev=11.8547; delta_pct=0.00; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:45:59.390Z",
+          "price": 11.847000000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8470; prev=11.8547; delta_pct=-0.06; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:45:59.390Z",
+          "price": 11.847000000000001,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8470; prev=11.8547; delta_pct=-0.06; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:14.550Z",
+          "price": 11.86295,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8629; prev=11.8470; delta_pct=0.13; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:27.262Z",
+          "price": 11.81235,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8124; prev=11.8629; delta_pct=-0.43; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:27.571Z",
+          "price": 11.811800000000002,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.8118; prev=11.8124; delta_pct=-0.00; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:04.721Z",
+          "price": 11.77935,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.7794; prev=11.8118; delta_pct=-0.27; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:04.721Z",
+          "price": 11.77935,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.7794; prev=11.8118; delta_pct=-0.27; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:44.380Z",
+          "price": 11.77055,
+          "unit": "USD/MMBtu",
+          "sentiment": "source=proxy:stooq:ng.f+cl.f; price=11.7706; prev=11.7794; delta_pct=-0.07; trend=flat",
+          "source": "proxy:stooq:ng.f+cl.f"
+        }
+      ]
+    },
+    "wheat_futures": {
+      "key": "wheat_futures",
+      "label": "Wheat Futures",
+      "domain": "food",
+      "entries": [
+        {
+          "timestamp": "2026-05-01T07:06:47.502Z",
+          "price": 0,
+          "unit": "USC/bushel",
+          "sentiment": "Source fetch failed for wheat_futures: fetch failed No baseline found in vault; seeded with 0 pending next successful pull.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T07:57:57.209Z",
+          "price": 0,
+          "unit": "USC/bushel",
+          "sentiment": "Source fetch failed for wheat_futures: Unexpected CSV for zw.f Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:01:48.227Z",
+          "price": 0,
+          "unit": "USC/bushel",
+          "sentiment": "Source fetch failed for wheat_futures: Unexpected CSV for zw.f Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:15:56.312Z",
+          "price": 0,
+          "unit": "USC/bushel",
+          "sentiment": "Source fetch failed for wheat_futures: Unexpected CSV for zw.f Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:22:44.480Z",
+          "price": 636.4,
+          "unit": "USC/bushel",
+          "sentiment": "Wheat supply anxiety remains elevated around Black Sea freight lanes.",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T08:40:48.709Z",
+          "price": 635.9,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.9000; prev=636.4000; delta_pct=-0.08; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:00:37.068Z",
+          "price": 635.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.1000; prev=635.9000; delta_pct=-0.13; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:02.956Z",
+          "price": 635.4,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.4000; prev=635.1000; delta_pct=0.05; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:02.956Z",
+          "price": 635.4,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.4000; prev=635.1000; delta_pct=0.05; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:18.931Z",
+          "price": 635.4,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.4000; prev=635.4000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:19:39.455Z",
+          "price": 635,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.0000; prev=635.4000; delta_pct=-0.06; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:59:08.027Z",
+          "price": 635.9,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.9000; prev=635.0000; delta_pct=0.14; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:10:26.089Z",
+          "price": 635.9,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.9000; prev=635.9000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:21:14.271Z",
+          "price": 636.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=636.1000; prev=635.9000; delta_pct=0.03; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:27:30.733Z",
+          "price": 635.9,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=635.9000; prev=636.1000; delta_pct=-0.03; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:06:03.839Z",
+          "price": 636.9,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=636.9000; prev=635.9000; delta_pct=0.16; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:06:04.990Z",
+          "price": 636.9,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=636.9000; prev=636.9000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:22:51.056Z",
+          "price": 636.4,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=636.4000; prev=636.9000; delta_pct=-0.08; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:26:51.136Z",
+          "price": 637.12,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=637.1200; prev=636.4000; delta_pct=0.11; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:31.201Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=637.1200; delta_pct=0.15; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:47.144Z",
+          "price": 637.9,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=637.9000; prev=638.1000; delta_pct=-0.03; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:57.624Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=637.9000; delta_pct=0.03; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:58.497Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=638.1000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:57.596Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=638.1000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:58.938Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=638.1000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:00.272Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=638.1000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:01.673Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=638.1000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:02.437Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=638.1000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:03.213Z",
+          "price": 638.1,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=638.1000; prev=638.1000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:01.989Z",
+          "price": 640.87,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=640.8700; prev=638.1000; delta_pct=0.43; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:01.989Z",
+          "price": 640.87,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=640.8700; prev=638.1000; delta_pct=0.43; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:14.919Z",
+          "price": 640.87,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=640.8700; prev=640.8700; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:27.995Z",
+          "price": 641,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=641.0000; prev=640.8700; delta_pct=0.02; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:48.877Z",
+          "price": 641,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=641.0000; prev=641.0000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:30.188Z",
+          "price": 641,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=641.0000; prev=641.0000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:30.188Z",
+          "price": 641,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=641.0000; prev=641.0000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:44.710Z",
+          "price": 641,
+          "unit": "USC/bushel",
+          "sentiment": "source=stooq:zw.f; price=641.0000; prev=641.0000; delta_pct=0.00; trend=flat",
+          "source": "stooq:zw.f"
+        }
+      ]
+    },
+    "rice_futures": {
+      "key": "rice_futures",
+      "label": "Rice Futures",
+      "domain": "food",
+      "entries": [
+        {
+          "timestamp": "2026-05-01T07:06:58.213Z",
+          "price": 0,
+          "unit": "USC/cwt",
+          "sentiment": "Source fetch failed for rice_futures: fetch failed No baseline found in vault; seeded with 0 pending next successful pull.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T07:57:57.777Z",
+          "price": 0,
+          "unit": "USC/cwt",
+          "sentiment": "Source fetch failed for rice_futures: Unexpected CSV for zr.f Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:01:48.733Z",
+          "price": 0,
+          "unit": "USC/cwt",
+          "sentiment": "Source fetch failed for rice_futures: Unexpected CSV for zr.f Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:15:56.702Z",
+          "price": 0,
+          "unit": "USC/cwt",
+          "sentiment": "Source fetch failed for rice_futures: Unexpected CSV for zr.f Reusing latest vault snapshot due to source failure/cooldown.",
+          "source": "seeded_zero"
+        },
+        {
+          "timestamp": "2026-05-01T08:22:44.683Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "Rice export controls are still a concern across key Asian corridors.",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T08:40:49.022Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:00:37.275Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:03.158Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:03.158Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:10:19.139Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:19:39.671Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T09:59:08.243Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:10:26.255Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:21:14.426Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T10:27:30.936Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:06:04.062Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:06:05.167Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:22:51.248Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:26:51.350Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:31.409Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:47.329Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:57.796Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:58.707Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:57.752Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:59.096Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:00.434Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:01.835Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:02.601Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:03.370Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:02.573Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:02.573Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:15.116Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:28.212Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:49.081Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:30.357Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:30.357Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:44.875Z",
+          "price": 11.155,
+          "unit": "USC/cwt",
+          "sentiment": "source=stooq:zr.f; price=11.1550; prev=11.1550; delta_pct=0.00; trend=flat",
+          "source": "stooq:zr.f"
+        }
+      ]
+    },
+    "urea_cf": {
+      "key": "urea_cf",
+      "label": "urea_cf",
+      "domain": "energy",
+      "entries": [
+        {
+          "timestamp": "2026-05-01T11:06:04.246Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; trend=initial_observation",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:06:05.394Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:22:51.454Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:26:51.522Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:31.578Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:47.527Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:58.020Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:58.879Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:57.912Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:59.254Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:00.600Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:01.995Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:02.758Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:03.546Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:02.772Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:02.772Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:15.287Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:28.413Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:49.257Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:30.574Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:30.574Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:45.037Z",
+          "price": 124.2,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:cf.us; price=124.2000; prev=124.2000; delta_pct=0.00; trend=flat",
+          "source": "stooq:cf.us"
+        }
+      ]
+    },
+    "npk_mosaic": {
+      "key": "npk_mosaic",
+      "label": "npk_mosaic",
+      "domain": "energy",
+      "entries": [
+        {
+          "timestamp": "2026-05-01T11:06:04.465Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; trend=initial_observation",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:06:05.571Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:22:51.652Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:26:51.735Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:31.788Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:32:47.713Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:58.194Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:59.094Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:58.079Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:59.410Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:00.760Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:02.155Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:02.919Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:03.708Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:02.986Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:02.986Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:15.485Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:28.627Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:49.462Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:30.747Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:30.747Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:45.204Z",
+          "price": 23.27,
+          "unit": "USD/share",
+          "sentiment": "source=stooq:mos.us; price=23.2700; prev=23.2700; delta_pct=0.00; trend=flat",
+          "source": "stooq:mos.us"
+        }
+      ]
+    },
+    "petrol_mumbai": {
+      "key": "petrol_mumbai",
+      "label": "Petrol Mumbai",
+      "domain": "energy",
+      "entries": [
+        {
+          "timestamp": "2026-05-01T11:33:57.413Z",
+          "price": 77.79622103898433,
+          "unit": "INR/L",
+          "sentiment": "source=proxy:stooq:cl.f+fx:Mumbai:INR/L; price=77.7962; trend=initial_observation",
+          "source": "proxy:stooq:cl.f+fx:Mumbai:INR/L"
+        },
+        {
+          "timestamp": "2026-05-01T11:33:58.321Z",
+          "price": 77.77381859483795,
+          "unit": "INR/L",
+          "sentiment": "source=proxy:stooq:cl.f+fx:Mumbai:INR/L; price=77.7738; prev=77.7962; delta_pct=-0.03; trend=flat",
+          "source": "proxy:stooq:cl.f+fx:Mumbai:INR/L"
+        }
+      ]
+    },
+    "crude_oil_india": {
+      "key": "crude_oil_india",
+      "label": "Crude Oil (India Spot)",
+      "domain": "energy",
+      "entries": [
+        {
+          "timestamp": "2026-05-01T11:36:57.430Z",
+          "price": 104.06,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini error); price=104.0600; trend=initial_observation",
+          "source": "stooq:cl.f (WTI fallback after Gemini error)"
+        },
+        {
+          "timestamp": "2026-05-01T11:36:58.781Z",
+          "price": 104.06,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini error); price=104.0600; prev=104.0600; delta_pct=0.00; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini error)"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:00.102Z",
+          "price": 104.05,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini parsing error); price=104.0500; prev=104.0600; delta_pct=-0.01; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini parsing error)"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:01.512Z",
+          "price": 104.04,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini parsing error); price=104.0400; prev=104.0500; delta_pct=-0.01; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini parsing error)"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:02.277Z",
+          "price": 104.04,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini parsing error); price=104.0400; prev=104.0400; delta_pct=0.00; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini parsing error)"
+        },
+        {
+          "timestamp": "2026-05-01T11:37:03.049Z",
+          "price": 104.04,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini parsing error); price=104.0400; prev=104.0400; delta_pct=0.00; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini parsing error)"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:00.947Z",
+          "price": 103.67,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini error); price=103.6700; prev=104.0400; delta_pct=-0.36; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini error)"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:00.947Z",
+          "price": 103.67,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini error); price=103.6700; prev=104.0400; delta_pct=-0.36; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini error)"
+        },
+        {
+          "timestamp": "2026-05-01T12:46:14.751Z",
+          "price": 103.89,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback - Gemini cooldown 45s remaining); price=103.8900; prev=103.6700; delta_pct=0.21; trend=flat",
+          "source": "stooq:cl.f (WTI fallback - Gemini cooldown 45s remaining)"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:27.793Z",
+          "price": 103.2,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback - Gemini cooldown 60s remaining); price=103.2000; prev=103.8900; delta_pct=-0.66; trend=flat",
+          "source": "stooq:cl.f (WTI fallback - Gemini cooldown 60s remaining)"
+        },
+        {
+          "timestamp": "2026-05-01T13:14:48.355Z",
+          "price": 103.22,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini parsing error); price=103.2200; prev=103.2000; delta_pct=0.02; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini parsing error)"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:29.554Z",
+          "price": 102.79,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini parsing error); price=102.7900; prev=103.2200; delta_pct=-0.42; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini parsing error)"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:29.554Z",
+          "price": 102.79,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback after Gemini parsing error); price=102.7900; prev=103.2200; delta_pct=-0.42; trend=flat",
+          "source": "stooq:cl.f (WTI fallback after Gemini parsing error)"
+        },
+        {
+          "timestamp": "2026-05-01T13:23:44.548Z",
+          "price": 102.77,
+          "unit": "USD/barrel",
+          "sentiment": "source=stooq:cl.f (WTI fallback - Gemini cooldown 21s remaining); price=102.7700; prev=102.7900; delta_pct=-0.02; trend=flat",
+          "source": "stooq:cl.f (WTI fallback - Gemini cooldown 21s remaining)"
+        }
+      ]
+    }
+  },
+  "updatedAt": "2026-05-01T13:23:45.206Z"
+}

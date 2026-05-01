@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrisisFlow Command Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="header">
+        <div>
+          <p class="kicker">May 2026 Global Supply Crisis</p>
+          <h1>CrisisFlow Command Center</h1>
+        </div>
+        <div class="controls">
+          <button id="refreshBtn" title="Run a live market probe immediately">Probe Now</button>
+          <label title="Skip vault cache and always fetch fresh data from internet sources">
+            <input id="forceToggle" type="checkbox" /> Force Live Fetch
+          </label>
+        </div>
+      </header>
+
+      <section class="grid">
+        <article class="panel" id="riskPanel">
+          <h2>Risk Matrix</h2>
+          <div class="risk-row">
+            <span>Energy</span>
+            <strong id="riskEnergy">-</strong>
+          </div>
+          <div class="risk-row">
+            <span>Food</span>
+            <strong id="riskFood">-</strong>
+          </div>
+          <p id="throttleStatus" class="status"></p>
+        </article>
+
+        <article class="panel" id="trendPanel">
+          <h2>Trends</h2>
+          <div id="trendCards" class="trend-cards"></div>
+        </article>
+
+        <article class="panel" id="advisoryPanel">
+          <h2 class="advisory-heading">
+            <span>Precautionary Action Wizard</span>
+            <span class="gemini-badge" title="Powered by Gemini">
+              <svg class="gemini-mark" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2l1.9 5.1L19 9l-5.1 1.9L12 16l-1.9-5.1L5 9l5.1-1.9L12 2z"></path>
+              </svg>
+              <span>Gemini</span>
+            </span>
+          </h2>
+          <ul id="advisoryList" class="advisory-list"></ul>
+        </article>
+      </section>
+
+      <section class="panel log-panel">
+        <div class="log-header">
+          <h2>Live Audit Log</h2>
+          <button id="clearLogBtn" class="btn-secondary" title="Clear the audit log display and file">Clear Log</button>
+        </div>
+        <pre id="auditLog" class="log-area"></pre>
+      </section>
+    </main>
+
+    <template id="trendTemplate">
+      <div class="trend-card">
+        <div class="trend-head">
+          <h3></h3>
+          <div class="trend-sidecar">
+            <span class="meta"></span>
+            <span class="badge"></span>
+          </div>
+        </div>
+        <p class="source"></p>
+        <p class="sentiment"></p>
+        <canvas width="420" height="120"></canvas>
+      </div>
+    </template>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
