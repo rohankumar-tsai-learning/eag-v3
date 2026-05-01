@@ -1,30 +1,10 @@
-class PrefabStore {
-  constructor(initialState) {
-    this.state = initialState;
-    this.listeners = new Set();
-  }
+/**
+ * Rendering functions (extracted from app.js)
+ * All rendering logic stays the same, just organized into a module.
+ */
 
-  subscribe(listener) {
-    this.listeners.add(listener);
-    listener(this.state);
-    return () => this.listeners.delete(listener);
-  }
-
-  set(nextState) {
-    this.state = nextState;
-    for (const fn of this.listeners) {
-      fn(this.state);
-    }
-  }
-}
-
-const store = new PrefabStore({
-  payload: null,
-  vault: null,
-  throttleText: ""
-});
-
-const nodes = {
+// DOM node cache
+export const nodes = {
   refreshBtn: document.querySelector("#refreshBtn"),
   forceToggle: document.querySelector("#forceToggle"),
   clearLogBtn: document.querySelector("#clearLogBtn"),
@@ -34,12 +14,12 @@ const nodes = {
   trendCards: document.querySelector("#trendCards"),
   advisoryList: document.querySelector("#advisoryList"),
   auditLog: document.querySelector("#auditLog"),
-  trendTemplate: document.querySelector("#trendTemplate")
+  trendTemplate: document.querySelector("#trendTemplate"),
 };
 
 let lastPayload = null;
 
-function fmtAge(isoTs) {
+export function fmtAge(isoTs) {
   if (!isoTs) return "";
   const secs = Math.round((Date.now() - Date.parse(isoTs)) / 1000);
   if (secs < 5) return "just now";
@@ -49,11 +29,11 @@ function fmtAge(isoTs) {
   return `${Math.round(mins / 60)}h ago`;
 }
 
-function riskClass(level) {
+export function riskClass(level) {
   return level.toLowerCase();
 }
 
-function drawSparkline(canvas, values) {
+export function drawSparkline(canvas, values) {
   const ctx = canvas.getContext("2d");
   const w = canvas.width;
   const h = canvas.height;
@@ -84,7 +64,7 @@ function drawSparkline(canvas, values) {
   ctx.stroke();
 }
 
-function renderRisk(payload) {
+export function renderRisk(payload) {
   nodes.riskEnergy.textContent = payload.risk.energy;
   nodes.riskFood.textContent = payload.risk.food;
   nodes.riskEnergy.className = riskClass(payload.risk.energy);
@@ -103,14 +83,14 @@ function renderRisk(payload) {
   }
 }
 
-function refreshRiskClock() {
+export function refreshRiskClock() {
   if (!lastPayload) {
     return;
   }
   renderRisk(lastPayload);
 }
 
-function renderAdvisory(payload) {
+export function renderAdvisory(payload) {
   nodes.advisoryList.innerHTML = "";
   payload.advisory.forEach((item) => {
     const li = document.createElement("li");
@@ -122,7 +102,7 @@ function renderAdvisory(payload) {
   });
 }
 
-function showSkeletons() {
+export function showSkeletons() {
   nodes.trendCards.innerHTML = "";
   nodes.trendCards.classList.add("loading");
   for (let i = 0; i < 6; i++) {
@@ -137,16 +117,16 @@ function showSkeletons() {
   }
 }
 
-function clearSkeletons() {
+export function clearSkeletons() {
   nodes.trendCards.classList.remove("loading");
 }
 
-function setProbing(on) {
+export function setProbing(on) {
   nodes.refreshBtn.disabled = on;
   nodes.refreshBtn.textContent = on ? "Probing…" : "Probe Now";
 }
 
-function renderTrends(payload, vault) {
+export function renderTrends(payload, vault) {
   nodes.trendCards.innerHTML = "";
   const commodities = Object.values(vault.commodities || {});
   const probeByKey = new Map((payload?.probe?.items || []).map((item) => [item.key, item]));
@@ -198,7 +178,9 @@ function renderTrends(payload, vault) {
         </tr>
         <tr style="border-bottom: 1px solid rgba(127, 212, 255, 0.2);">
           <td style="padding: 0.5rem 0;">24h Change</td>
-          <td style="text-align: right;">${series.entries.length > 1 ? ((series.entries[series.entries.length - 1].price - series.entries[0].price).toFixed(2)) : "N/A"}</td>
+          <td style="text-align: right;">${
+            series.entries.length > 1 ? (series.entries[series.entries.length - 1].price - series.entries[0].price).toFixed(2) : "N/A"
+          }</td>
         </tr>
         <tr>
           <td style="padding: 0.5rem 0;">Status</td>
@@ -215,96 +197,20 @@ function renderTrends(payload, vault) {
   clearSkeletons();
 }
 
-async function refresh(force = false) {
-  setProbing(true);
-  showSkeletons();
-  try {
-    const response = await fetch("/api/dispatch", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ force })
-    });
+export function setLastPayload(payload) {
+  lastPayload = payload;
+}
 
-    const payload = await response.json();
-    const vault = await fetch("/api/vault").then((r) => r.json());
-    store.set({ payload, vault });
-  } finally {
-    setProbing(false);
+export function updateAuditLog(tail, preserve = false) {
+  const prevTop = nodes.auditLog.scrollTop;
+  nodes.auditLog.textContent = tail || "";
+  if (preserve) {
+    nodes.auditLog.scrollTop = prevTop;
+  } else {
+    nodes.auditLog.scrollTop = nodes.auditLog.scrollHeight;
   }
 }
 
-function connectUiStream() {
-  const stream = new EventSource("/api/ui/stream");
-  stream.onmessage = async (event) => {
-    const data = JSON.parse(event.data);
-    if (data.type === "connected") {
-      return;
-    }
-    const vault = await fetch("/api/vault").then((r) => r.json());
-    store.set({ payload: data, vault });
-  };
+export function clearAuditLog() {
+  nodes.auditLog.textContent = "";
 }
-
-let auditStream = null;
-let auditAutoScroll = true;
-
-function connectAuditStream() {
-  if (auditStream) {
-    auditStream.close();
-  }
-  auditStream = new EventSource("/api/audit/stream");
-  auditStream.onmessage = (event) => {
-    const data = JSON.parse(event.data);
-    const prevTop = nodes.auditLog.scrollTop;
-    nodes.auditLog.textContent = data.tail || "";
-    if (auditAutoScroll) {
-      nodes.auditLog.scrollTop = nodes.auditLog.scrollHeight;
-    } else {
-      nodes.auditLog.scrollTop = prevTop;
-    }
-  };
-}
-
-store.subscribe((state) => {
-  if (!state.payload || !state.vault) {
-    return;
-  }
-
-  lastPayload = state.payload;
-
-  renderRisk(state.payload);
-  renderAdvisory(state.payload);
-  renderTrends(state.payload, state.vault);
-});
-
-nodes.auditLog.addEventListener("scroll", () => {
-  const distanceFromBottom = nodes.auditLog.scrollHeight - nodes.auditLog.scrollTop - nodes.auditLog.clientHeight;
-  auditAutoScroll = distanceFromBottom < 16;
-});
-
-nodes.refreshBtn.addEventListener("click", () => {
-  // Probe Now always forces a live fetch; the checkbox adds force=true redundantly
-  // but the real effect is that we always bypass the vault cache on manual probe.
-  refresh(true);
-});
-
-nodes.clearLogBtn.addEventListener("click", async () => {
-  nodes.clearLogBtn.disabled = true;
-  nodes.clearLogBtn.textContent = "Clearing…";
-  try {
-    await fetch("/api/audit/log", { method: "DELETE" });
-    nodes.auditLog.textContent = "";
-    // Reconnect SSE so the server resets the read offset for this client.
-    connectAuditStream();
-  } finally {
-    nodes.clearLogBtn.disabled = false;
-    nodes.clearLogBtn.textContent = "Clear Log";
-  }
-});
-
-connectUiStream();
-connectAuditStream();
-setInterval(refreshRiskClock, 15000);
-// Show skeletons immediately on page load before first data arrives.
-showSkeletons();
-refresh(false);

@@ -34,6 +34,33 @@ CrisisFlow is a browser-based crisis command center with a local MCP server and 
 - `urea_cf`
 - `npk_mosaic`
 
+## Architecture
+
+### Frontend
+
+The browser frontend uses **Prefab** as the state management layer:
+
+- **`public/prefab-state.js`**: Prefab-based store with reactive subscribers
+- **`public/prefab-renderers.js`**: Pure rendering functions (risk, advisory, trends, audit)
+- **`public/prefab-app.js`**: Orchestration layer handling network integration and event delegation
+
+The frontend communicates with the backend exclusively through:
+- `POST /api/dispatch` - Run market probe and get advisory
+- `GET /api/vault` - Fetch commodity time-series
+- `GET /api/ui/stream` - SSE for real-time payload updates
+- `GET /api/audit/stream` - SSE for audit log tail
+- `DELETE /api/audit/log` - Clear audit log
+
+### Backend
+- **`src/index.ts`**: Entry point for web server
+- **`src/mcp.ts`**: Entry point for MCP server
+- **`src/services/marketProbeService.ts`**: Live market data fetching
+- **`src/services/uiDispatchService.ts`**: Payload building and broadcasting
+- **`src/services/riskService.ts`**: Risk matrix calculation
+- **`src/services/geminiAdvisoryService.ts`**: Gemini-backed advisory enrichment
+- **`src/services/vaultService.ts`**: Time-series persistence
+- **`src/services/auditLogger.ts`**: Operation logging
+
 ## Quick start
 
 ```bash
