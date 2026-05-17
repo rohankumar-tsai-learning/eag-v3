@@ -1,0 +1,24 @@
+2026-05-16 02:14:43,507 | INFO | mcp.server.lowlevel.server | Processing request of type CallToolRequest
+2026-05-16 02:14:43,518 | INFO | orbital_predictor_mcp | Starting orbital visibility computation | request={'satellite_id': '25544', 'latitude_deg': 40.71, 'longitude_deg': -74.0, 'elevation_m': 0.0, 'minimum_visible_elevation_deg': 10.0}
+2026-05-16 02:14:43,521 | INFO | orbital_predictor_mcp | Step 1: Fetching TLE from CelesTrak | satellite_id=25544 | url=https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=TLE
+2026-05-16 02:14:43,534 | INFO | mcp.server.lowlevel.server | Processing request of type CallToolRequest
+2026-05-16 02:14:43,538 | INFO | orbital_predictor_mcp | Starting orbital visibility computation | request={'satellite_id': '25544', 'latitude_deg': 19.08, 'longitude_deg': 72.88, 'elevation_m': 0.0, 'minimum_visible_elevation_deg': 10.0}
+2026-05-16 02:14:43,538 | INFO | orbital_predictor_mcp | Step 1: Fetching TLE from CelesTrak | satellite_id=25544 | url=https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=TLE
+2026-05-16 02:14:45,445 | INFO | orbital_predictor_mcp | Fetched TLE payload length=166 characters
+2026-05-16 02:14:45,454 | INFO | orbital_predictor_mcp | Parsing TLE response for satellite_id=25544
+2026-05-16 02:14:45,454 | INFO | orbital_predictor_mcp | TLE parsed satellite id=25544 | requested=25544
+2026-05-16 02:14:45,454 | INFO | orbital_predictor_mcp | Step 2: Loading timescale and ephemeris
+2026-05-16 02:14:45,454 | INFO | orbital_predictor_mcp | Fetched TLE payload length=166 characters
+2026-05-16 02:14:45,459 | INFO | orbital_predictor_mcp | Ephemeris file available | path=de421.bsp
+2026-05-16 02:14:45,461 | INFO | orbital_predictor_mcp | Parsing TLE response for satellite_id=25544
+2026-05-16 02:14:45,461 | INFO | orbital_predictor_mcp | TLE parsed satellite id=25544 | requested=25544
+2026-05-16 02:14:45,465 | INFO | orbital_predictor_mcp | Step 2: Loading timescale and ephemeris
+2026-05-16 02:14:45,465 | INFO | orbital_predictor_mcp | Ephemeris file available | path=de421.bsp
+2026-05-16 02:14:45,473 | INFO | orbital_predictor_mcp | Building EarthSatellite object for name=ISS (ZARYA)
+2026-05-16 02:14:45,473 | INFO | orbital_predictor_mcp | Step 3: Computing relative position | lat=19.08 lon=72.88 elev_m=0.0
+2026-05-16 02:14:45,478 | INFO | orbital_predictor_mcp | Building EarthSatellite object for name=ISS (ZARYA)
+2026-05-16 02:14:45,478 | INFO | orbital_predictor_mcp | Step 4: Calculating look angles and visibility criteria
+2026-05-16 02:14:45,478 | INFO | orbital_predictor_mcp | Step 3: Computing relative position | lat=40.71 lon=-74.0 elev_m=0.0
+2026-05-16 02:14:45,478 | INFO | orbital_predictor_mcp | Visibility computation completed | result={'satellite_id': '25544', 'satellite_name': 'ISS (ZARYA)', 'requested_at_utc': '2026-05-15T20:44:45.478238+00:00', 'tle_epoch_utc': '2026-05-15T03:59:18.034943+00:00', 'tle_age_hours': 16.757623137499998, 'azimuth_deg': 143.15501702365736, 'elevation_deg': -72.14583655758804, 'distance_km': 12580.21598577064, 'is_sunlit': True, 'is_visible': False, 'visibility_reason': 'Not visible: elevation -72.15 is below threshold 10.00'}
+2026-05-16 02:14:45,478 | INFO | orbital_predictor_mcp | Step 4: Calculating look angles and visibility criteria
+2026-05-16 02:14:45,494 | INFO | orbital_predictor_mcp | Visibility computation completed | result={'satellite_id': '25544', 'satellite_name': 'ISS (ZARYA)', 'requested_at_utc': '2026-05-15T20:44:45.494383+00:00', 'tle_epoch_utc': '2026-05-15T03:59:18.034943+00:00', 'tle_age_hours': 16.757627622222223, 'azimuth_deg': 219.97123110104664, 'elevation_deg': -49.22653765861349, 'distance_km': 10188.392089796398, 'is_sunlit': True, 'is_visible': False, 'visibility_reason': 'Not visible: elevation -49.23 is below threshold 10.00'}
