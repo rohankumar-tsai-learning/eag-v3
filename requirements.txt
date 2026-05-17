@@ -1,0 +1,5 @@
+fastmcp>=2.0.0
+pydantic>=2.7.0
+skyfield>=1.49
+requests>=2.32.0
+python-dotenv>=1.0.1
