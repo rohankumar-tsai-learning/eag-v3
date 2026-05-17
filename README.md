@@ -8,7 +8,7 @@ It uses live orbital data and astronomy calculations to return a clear yes or no
 
 ## Demo
 
-- YouTube Demo: [PASTE_YOUTUBE_DEMO_LINK_HERE]
+- Orbital Predictor and Visibility MCP Server Demo: [https://youtu.be/jTxCydAicmk](https://youtu.be/jTxCydAicmk)
 
 ## What It Does (Simple View)
 
