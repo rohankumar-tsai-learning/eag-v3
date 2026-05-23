@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DecisionOutput",
+  "type": "object",
+  "properties": {
+    "answer": {"type": ["string", "null"]},
+    "tool_call": {
+      "type": ["object", "null"],
+      "properties": {
+        "name": {"type": "string"},
+        "arguments": {"type": "object"}
+      },
+      "required": ["name", "arguments"],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "oneOf": [
+    {"required": ["answer"], "properties": {"tool_call": {"type": "null"}}},
+    {"required": ["tool_call"], "properties": {"answer": {"type": "null"}}}
+  ]
+}

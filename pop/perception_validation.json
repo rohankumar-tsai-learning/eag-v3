@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PerceptionRawOutput",
+  "type": "object",
+  "required": ["goals"],
+  "properties": {
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text", "done"],
+        "properties": {
+          "text": {"type": "string"},
+          "done": {"type": "boolean"},
+          "attach_artifact_index": {"type": ["integer", "null"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
